@@ -1,0 +1,30 @@
+---
+layout: layouts/example.njk
+title: Foo (example)
+arguments: header
+---
+
+{%- from "moj/components/foo/macro.njk" import mojFoo -%}
+
+{{ mojFoo({
+  organisationLabel: {
+    text: 'Organisation name',
+    href: '#'
+  },
+  serviceLabel: {
+    text: 'Service name',
+    href: '#'
+  },
+  navigation: {
+    label: 'Account navigation',
+    items: [{
+      text: 'Account name',
+      href: '#',
+      active: true
+    }, {
+      text: 'Sign out',
+      href: '#'
+    }]
+  }
+
+}) }}
