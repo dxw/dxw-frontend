@@ -1,0 +1,6 @@
+<div class="dxw-card{%- if params.blockLink %} js-block{% endif -%}">
+    {%- if params.media %}<img class="dxw-card__image" src="{{- params.media | safe -}}" loading="lazy" alt="">{% endif -%}
+    <div class="dxw-card__body govuk-body">
+    {{- params.html | safe if params.html else params.text -}}
+    </div>
+</div>
