@@ -1,0 +1,11 @@
+---
+layout: layouts/example.njk
+title: Hero (example)
+---
+
+{%- from "src/dxw/components/hero/macro.njk" import dxwHero -%}
+
+{{ dxwHero({
+  label: 'Hero',
+  media: 'https://www.dxw.com/wp-content/uploads/fallback-3-600x400.png'
+}) }}

@@ -1,0 +1,11 @@
+<div class="dxw-hero {{- ' ' + params.classes if params.classes }}" {%- if params.media %}style="background-image:url({{- params.media | safe -}})"{% endif -%}>
+    <div class="dxw-hero__overlay">
+        <div class="govuk-width-container">
+            <h1>Hero content</h1>
+            <p>Latest news from</p>
+            {%- if params.cta %}
+            <a href="/" class="govuk-link">{{- params.cta | safe -}}</a>
+            {% endif -%}
+        </div>
+    </div>
+</div>

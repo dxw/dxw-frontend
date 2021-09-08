@@ -1,0 +1,12 @@
+---
+layout: layouts/example.njk
+title: Hero with button (example)
+---
+
+{%- from "src/dxw/components/hero/macro.njk" import dxwHero -%}
+
+{{ dxwHero({
+  label: 'Hero',
+  cta: 'Call to action',
+  media: 'https://www.dxw.com/wp-content/uploads/fallback-3-600x400.png'
+}) }}
