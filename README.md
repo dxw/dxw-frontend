@@ -10,7 +10,7 @@ dxw Frontend contains the code you need to start building user interfaces for in
 
 Run these commands to setup (first-time run only):
 
-`yarn && yarn run build:docs`
+`yarn && yarn run build:package`
 
 Start the server:
 
