@@ -1,0 +1,14 @@
+---
+layout: layouts/example.njk
+title: Card (example)
+---
+
+{%- from "src/dxw/components/card/macro.njk" import dxwCard -%}
+
+{% set cardHtml %}
+  <h3 class="govuk-heading-s">This service will be unavailable from 1 June 2019</h3>
+{% endset %}
+
+{{ dxwCard({
+  html: cardHtml
+}) }}

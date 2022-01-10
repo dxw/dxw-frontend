@@ -1,0 +1,17 @@
+---
+layout: layouts/example.njk
+title: Card with decorative image (example)
+---
+
+{%- from "src/dxw/components/card/macro.njk" import dxwCard -%}
+
+{% set cardHtml %}
+  <h3 class="govuk-heading-s">Card with decorative image</h3>
+  <p>Aliquet lectus proin nibh nisl condimentum id venenatis. Hendrerit dolor magna eget est lorem. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus.</p>
+  <p>Natoque penatibus et magnis dis. Faucibus scelerisque eleifend donec pretium vulputate. Viverra adipiscing at in tellus integer feugiat scelerisque varius morbi. Eget nunc lobortis mattis aliquam faucibus purus in massa.</p>
+{% endset %}
+
+{{ dxwCard({
+  media: 'https://www.dxw.com/wp-content/uploads/fallback-3-600x400.png',
+  html: cardHtml
+}) }}

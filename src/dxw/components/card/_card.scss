@@ -1,0 +1,22 @@
+.dxw-card {
+  background-color: rgb(223, 223, 223);
+  margin-bottom: govuk-spacing(4);
+
+  &.dxw-linkify {
+    cursor: pointer;
+
+    &:hover a {
+      text-decoration: none;
+    }
+  }
+}
+
+.dxw-card__body {
+  padding: govuk-spacing(4);
+}
+
+.dxw-card__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}

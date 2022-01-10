@@ -1,0 +1,17 @@
+---
+layout: layouts/example.njk
+title: Card block link (example)
+---
+
+{%- from "src/dxw/components/card/macro.njk" import dxwCard -%}
+
+{% set cardHtml %}
+  <h3 class="govuk-heading-s"><a class="govuk-link" target="_blank" href="https://www.dxw.com/case-studies/">Card with block link</a></h3>
+  <p>Aliquet lectus proin nibh nisl condimentum id venenatis. Hendrerit dolor magna eget est lorem. Nisi scelerisque eu ultrices vitae auctor eu augue ut lectus.</p>
+{% endset %}
+
+{{ dxwCard({
+  blockLink: true,
+  media: 'https://www.dxw.com/wp-content/uploads/fallback-3-600x400.png',
+  html: cardHtml
+}) }}
